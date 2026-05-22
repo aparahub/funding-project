@@ -134,7 +134,7 @@ function handleKeydown(event) {
 }
 
 onMounted(async () => {
-  const response = await fetch('/answers.json')
+  const response = await fetch('https://funding-project.onrender.com/answers')
   answers.value = await response.json()
 
   window.addEventListener('keydown', handleKeydown)
